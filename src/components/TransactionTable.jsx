@@ -167,19 +167,19 @@ const TransactionTable = () => {
                 <tbody>
                   {group.rows.map((t) => (
                     <tr key={t.id}>
-                      <td className="date-cell">{fmtDate(t.date)}</td>
-                      <td className="desc-cell">{t.description || "-"}</td>
-                      <td>
+                      <td className="date-cell" data-label="Date">{fmtDate(t.date)}</td>
+                      <td className="desc-cell" data-label="Description">{t.description || "-"}</td>
+                      <td data-label="Category">
                         <span className="badge-cat">{t.category}</span>
                       </td>
-                      <td>
+                      <td data-label="Type">
                         <span className={`badge-type ${t.type}`}>{t.type}</span>
                       </td>
-                      <td className={`amt ${t.type}`}>
+                      <td className={`amt ${t.type}`} data-label="Amount">
                         {t.type === "income" ? "+" : "-"}Rs {t.amount.toLocaleString("en-IN")}
                       </td>
                       {role === "admin" && (
-                        <td>
+                        <td data-label="Actions">
                           <div className="row-actions">
                             {/* admin actions stay hidden for viewer mode */}
                             <button type="button" className="act-btn" onClick={() => openModal(t)} aria-label={`Edit ${t.description || t.category}`}>

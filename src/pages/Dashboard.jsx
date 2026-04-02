@@ -82,7 +82,7 @@ const Dashboard = () => {
             </div>
           )}
 
-          <div className="stat-grid" style={{ gridTemplateColumns: "repeat(3, minmax(0, 1fr))" }}>
+          <div className="stat-grid transaction-stat-grid">
             <SummaryCard title="Total Income" amount={stats.income} type="income" />
             <SummaryCard title="Total Expenses" amount={stats.expenses} type="expense" />
             <SummaryCard title="Net Balance" amount={stats.balance} type="balance" />
