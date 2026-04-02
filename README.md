@@ -149,13 +149,6 @@ npm run lint
 - Clear visual distinction between income and expense
 - Smooth transitions and a branded loading experience
 
-## If I Had More Time
-
-- Add deploy preview link and screenshots to the README
-- Add chart tooltips with richer narrative summaries
-- Introduce keyboard shortcuts for power-user interactions
-- Add tests for store logic and transaction workflows
-
 ## Notes
 
 This project is intentionally frontend-only and not production-backed. The focus is on interface design, component composition, state management, and thoughtful user experience under realistic dashboard requirements.
