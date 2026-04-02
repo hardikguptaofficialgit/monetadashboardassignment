@@ -36,9 +36,7 @@ const LoadingScreen = ({ onComplete }) => {
           <path className="moneta-underline" d="M176 198C250 230 508 232 585 188" />
         </svg>
 
-        <div className="loading-copy">
-          <p>Preparing your finance workspace with a smoother Moneta experience.</p>
-        </div>
+     
 
        
       </div>
