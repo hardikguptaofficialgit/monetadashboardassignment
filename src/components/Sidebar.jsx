@@ -92,7 +92,6 @@ const Sidebar = ({ isOpen, onClose, isCollapsed, onToggleCollapse }) => {
           </div>
 
           <div className="role-pills">
-            // this simulates role-based access on the frontend
             <button className={`role-pill ${role === "viewer" ? "on" : ""}`} onClick={() => setRole("viewer")}>
               Viewer
             </button>

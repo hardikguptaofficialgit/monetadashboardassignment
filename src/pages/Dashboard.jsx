@@ -31,7 +31,6 @@ const Dashboard = () => {
           <div className="page-head">
             <div>
               <h2 className="clip-text">Dashboard</h2>
-              <p>Financial overview across balance, income, expenses, savings, and live spending signals.</p>
             </div>
             <div className="head-actions">
               {quickAction}
@@ -67,7 +66,6 @@ const Dashboard = () => {
           <div className="page-head">
             <div>
               <h2 className="clip-text">Transactions</h2>
-              <p>Searchable transaction history with filters, grouping, sorting, and role-aware controls.</p>
             </div>
             <div className="head-actions">
               {quickAction}
@@ -99,7 +97,6 @@ const Dashboard = () => {
           <div className="page-head">
             <div>
               <h2 className="clip-text">Insights</h2>
-              <p>Spending patterns, monthly momentum, category concentration, and budget pressure.</p>
             </div>
           </div>
 
