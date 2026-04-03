@@ -4,7 +4,7 @@ const LOADER_DURATION = 3450;
 
 const LoadingScreen = ({ onComplete }) => {
   useEffect(() => {
-    // hide the splash screen after the intro animation finishes
+    // Hide the splash screen after the intro animation finishes
     const timer = window.setTimeout(() => {
       onComplete?.();
     }, LOADER_DURATION);
@@ -14,10 +14,17 @@ const LoadingScreen = ({ onComplete }) => {
 
   return (
     <div className="loading-screen" aria-label="Loading Moneta">
-   
+      {/* Inner wrapper added for perfect Flexbox centering */}
+      <div className="loading-content">
+        
         <p className="loading-kicker">Finance Dashboard</p>
 
-        <svg className="moneta-loader" viewBox="0 0 760 280" role="img" aria-labelledby="moneta-loader-title">
+        <svg 
+          className="moneta-loader" 
+          viewBox="0 0 760 280" 
+          role="img" 
+          aria-labelledby="moneta-loader-title"
+        >
           <title id="moneta-loader-title">Moneta loading animation</title>
           <defs>
             <linearGradient id="moneta-underline-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -36,10 +43,8 @@ const LoadingScreen = ({ onComplete }) => {
           <path className="moneta-underline" d="M176 198C250 230 508 232 585 188" />
         </svg>
 
-     
-
-       
       </div>
+    </div>
   );
 };
 
