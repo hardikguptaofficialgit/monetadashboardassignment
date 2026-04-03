@@ -17,7 +17,6 @@ const LoadingScreen = ({ onComplete }) => {
       {/* Inner wrapper added for perfect Flexbox centering */}
       <div className="loading-content">
         
-        <p className="loading-kicker">Finance Dashboard</p>
 
         <svg 
           className="moneta-loader" 
